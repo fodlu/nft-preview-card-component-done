@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: hsl(217, 54%, 11%);
+  color: hsl(0, 0%, 100%);
+}
+
+.container {
+  width: 19%;
+  padding: 15px;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 10px;
+}
+
+.container .head {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+}
+
+.container h1 {
+  font-size: 17px;
+  padding: 7px 0;
+}
+
+.container .line {
+  border: 1px solid hsl(215, 32%, 27%);
+}
+
+.container p {
+  font-size: 13px;
+  padding-bottom: 10px;
+}
+
+.container .timeNprice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.container .timeNprice .eth {
+  color: hsl(178, 100%, 50%);
+}
+
+.container .timeNprice .eth,
+.container .timeNprice .time {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.container .timeNprice .eth img,
+.container .timeNprice .time img {
+  width: 15px;
+  margin-right: 5px;
+}
+
+.container .creator {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.container .creator img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.container .creator .h6 {
+  font-style: normal;
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    display: block;
+  }
+  .container {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .container h1 {
+    font-size: 25px;
+    padding: 15px 0;
+  }
+  .container p {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  .container .creator h6 {
+    font-size: 20px;
+  }
+} ;
